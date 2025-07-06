@@ -1,7 +1,11 @@
-﻿services:
+services:
   - type: web
     name: RUSH
     env: python
-    buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn app:app
     pythonVersion: 3.11.8
+    buildCommand: |
+      python --version
+      pip install --upgrade pip setuptools wheel
+      pip install -r requirements.txt
+    startCommand: gunicorn app:app
+
