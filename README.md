@@ -97,9 +97,9 @@ python app.py
 
 | Metric | Score  |
 | ------ | ------ |
-| MAE    | \~400  |
-| RMSE   | \~600  |
-| R²     | \~0.85 |
+| MAE    | \~268.17  |
+| RMSE   | \~471.65 |
+| R²     | \~0.9437 |
 
 *Actual metrics are saved in `model/performance_metrics.json`.*
 
